@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "post"
+    label: "Post" 
+    folder: "content/post" 
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Florian" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "note"
+    label: "Note" 
+    folder: "content/note" 
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Florian" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
