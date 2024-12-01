@@ -2,12 +2,15 @@
 title: Home
 ---
 
-[<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;padding-bottom:10rem;" alt="Github repo" />](https://github.com/yihui/hugo-xmin)
+[<img src="/images/me2.jpg" style="max-width:15%;min-width:40px;float:left;border-radius:4px;margin-right: 1rem;" alt="A photo of the site owner and namesake." />](/)
 
-# floverfelt<span style="font-size: 1.5rem; text-decoration: underline; font-style: italic; margin-left: 10px;">.com</span>
+# <a href='/' style="color: black; text-decoration: none;"><span>floverfelt</span><span style="font-size: 1.25rem; font-style: italic; padding-left: 1px;">.com</span></a>
 
-## _Thoughts, notes, etc..._
+## _Thoughts on life; notes on technology_
 
+### _etcetera._
+
+<div style="margin: 0; height: 0; padding-bottom: 10px;">&nbsp;</div>
 
 **XMin** is a Hugo theme written by [Yihui Xie](https://yihui.org) in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 140 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).
 
