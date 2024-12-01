@@ -33,3 +33,13 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Categories", name: "categories", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "content"
+    label: "Content" 
+    folder: "content" 
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Florian" }
+      - { label: "Body", name: "body", widget: "markdown" }
