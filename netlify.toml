@@ -1,7 +1,0 @@
-[build.environment]
-HUGO_VERSION = "0.92.2"
-TZ = "America/New_York"
-
-[build]
-publish = "public"
-command = "hugo --gc --minify --config hugo.yaml"

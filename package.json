@@ -1,0 +1,13 @@
+{
+  "name": "floverfelt.com",
+  "version": "0.0.1",
+  "description": "Personal website of floverfelt",
+  "private": true,
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve --port=8081"
+  },
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
