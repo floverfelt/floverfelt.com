@@ -67,7 +67,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-            sortFn: explorerSortFunc
+            //sortFn: explorerSortFunc
     }),
   ],
   right: [
@@ -93,7 +93,7 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-          sortFn: explorerSortFunc
+          //sortFn: explorerSortFunc
     }),
   ],
   right: [],
