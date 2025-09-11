@@ -1,0 +1,11 @@
+# IDE files
+.idea
+
+# npm modules
+node_modules
+
+# Quartz content
+public
+
+# Quartz files
+quartz/.quartz-cache
