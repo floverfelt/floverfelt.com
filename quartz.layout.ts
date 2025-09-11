@@ -67,7 +67,6 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-            useSavedState: false,
             sortFn: explorerSortFunc
     }),
   ],
@@ -94,7 +93,6 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-          useSavedState: false,
           sortFn: explorerSortFunc
     }),
   ],
