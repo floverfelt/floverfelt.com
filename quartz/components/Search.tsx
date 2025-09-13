@@ -25,7 +25,7 @@ export default ((userOpts?: Partial<SearchOptions>) => {
             <title>Search</title>
             <g class="search-path" fill="none">
               <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
-              <circle cx="8" cy="8" r="7" />
+              <circle cx="7" cy="7" r="6" />
             </g>
           </svg>
         </button>

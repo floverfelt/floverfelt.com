@@ -1,6 +1,27 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+
+const explorerSortFunc = (a: any, b: any) => {
+  // Sort the top level explorer folders. There should be a better way to do this... 
+  const explorerSortOrder = [ "thoughts", "technical", "reviews", "dailyish", "etc"]
+  if ((a.isFolder && b.isFolder) && (a.slugSegments.length == 1 && b.slugSegments.length == 1)) {
+    return explorerSortOrder.indexOf(a.slugSegments[0]) - explorerSortOrder.indexOf(b.slugSegments[0])
+  }
+  // Fallback to default order
+  if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+    return a.displayName.localeCompare(b.displayName, undefined, {
+      numeric: true,
+      sensitivity: "base",
+    })
+  }
+  if (!a.isFolder && b.isFolder) {
+    return 1
+  } else {
+    return -1
+  }
+}
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -8,8 +29,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/floverfelt"
     },
   }),
 }
@@ -25,6 +45,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
+  afterBody: [
+    Component.ConditionalRender({
+      component: Component.RecentNotes({ title: "🕰️ Latest", showTags: true, limit: 5 }),
+      condition: (page) => {
+        return page.fileData.slug === "index"
+      },
+    }),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -38,7 +66,9 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+            sortFn: explorerSortFunc
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +92,9 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+          sortFn: explorerSortFunc
+    }),
   ],
   right: [],
 }

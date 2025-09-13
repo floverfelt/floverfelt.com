@@ -1,3 +1,46 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+a.internal:hover {
+    color: var(--secondary) !important;
+}
+footer {
+    opacity: .85;
+}
+.content-main {
+    margin-top: 1.5rem;
+}
+// Shrink the table of contents button a bit
+button.toc-header .fold {
+    margin-left: 0.25rem;
+    transform: scale(0.90);
+}
+button.toc-header.collapsed .fold {
+    transform: scale(0.90) rotate(-90deg);
+}
+.breadcrumb-element > p {
+    transform: scale(0.90);
+}
+.welcome {
+    display: flex;
+}
+.me-img {
+    content-visibility: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 0 !important;
+}
+.welcome-right {
+    display: block;
+    margin-left: 1rem;
+}
+.recent-notes-meta {
+    font-size: smaller;
+}
+.recent-notes-tag-link {
+    font-size: smaller;
+}
+.img-inline {
+  max-height: 500px;
+}
