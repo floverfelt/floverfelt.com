@@ -30,7 +30,7 @@ cssclasses:
 
 My days are spent coding in [Java and a myriad of other languages](/technical/) - I have a particular interest in [AWS](https://aws.amazon.com/) and build tools like [Jenkins](https://www.jenkins.io/), [Maven](https://maven.apache.org/), and [Gradle](https://gradle.com/). I also have [thoughts](/thoughts/) about things and I try to write [daily. Well, ish.](/dailyish/)
 
-My evenings are spent weightliftingm, and then on [books, movies, and video games](/reviews/) with my lovely wife and kids.
+My evenings are spent weightlifting, and then on [books, movies, and video games](/reviews/) with my lovely wife and kids.
 
 # 🐛 Elsewhere
 
