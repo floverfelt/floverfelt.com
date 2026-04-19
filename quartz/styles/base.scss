@@ -17,6 +17,9 @@ body {
   background-color: var(--light);
   font-family: var(--bodyFont);
   color: var(--darkgray);
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 .text-highlight {
