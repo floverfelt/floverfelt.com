@@ -28,6 +28,7 @@ Hm, they're mortally offended by... this?
 <div>
     <img src="/static/snapstore.png" alt="Snap store photo" class="img-inline">
 </div>
+
 *If you're unaware, this is the snapstore and it really bothers people for some reason.*
 
 Well, ok, let me try Fedora, that's often recommended, wait which of these do I pick?
